@@ -15,6 +15,16 @@ int main()
     if ( //child process
         CreateProcess(an, NULL, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &si, &pi)
         )
-    std::cout << "---Proc created"
-    std::cout << "Hello World!\n";
+        std::cout << "---Proc created\n";
+    else std::cout << "---Proc not created\n";
+
+    for (int i = 0; i < 100; i++) {
+        Sleep(1000);
+        std::cout << "os_001: " << i << "\n";
+    }
+
+    WaitForSingleObject(pi.hProcess, INFINITE);
+    CloseHandle(pi.hProcess);
+
+    return 0;
 }
