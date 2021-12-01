@@ -1,3 +1,9 @@
 
 *.ipch
 *.tlog
+*.lastbuildstate
+*.recipe
+*.log
+*.idb
+*.obj
+*.obj
