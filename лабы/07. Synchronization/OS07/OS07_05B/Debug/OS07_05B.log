@@ -1,0 +1,22 @@
+﻿Build started 25.11.2021 10:27:20.
+Logging verbosity is set to: Normal.     1>Project "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\OS07_05B\OS07_05B.vcxproj" on node 2 (Build target(s)).
+     1>PrepareForBuild:
+         Creating directory "Debug\OS07_05B.tlog\".
+       InitializeBuildStatus:
+         Creating "Debug\OS07_05B.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt OS07_05B.cpp
+         OS07_05B.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\Debug\OS07_05B.exe" /INCREMENTAL /ILK:"Debug\OS07_05B.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\Debug\OS07_05B.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\Debug\OS07_05B.lib" /MACHINE:X86 Debug\OS07_05B.obj
+         OS07_05B.vcxproj -> C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\Debug\OS07_05B.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\OS07_05B.tlog\unsuccessfulbuild".
+         Touching "Debug\OS07_05B.tlog\OS07_05B.lastbuildstate".
+     1>Done Building Project "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\OS07_05B\OS07_05B.vcxproj" (Build target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.19

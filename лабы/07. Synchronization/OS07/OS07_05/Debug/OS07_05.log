@@ -1,0 +1,19 @@
+﻿Build started 01.12.2021 13:22:18.
+Logging verbosity is set to: Normal.     1>Project "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\лабы\07. Synchronization\OS07\OS07_05\OS07_05.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\OS07_05.tlog\unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         OS07_05.vcxproj -> C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\лабы\07. Synchronization\OS07\Debug\OS07_05.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\OS07_05.tlog\unsuccessfulbuild".
+         Touching "Debug\OS07_05.tlog\OS07_05.lastbuildstate".
+     1>Done Building Project "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\лабы\07. Synchronization\OS07\OS07_05\OS07_05.vcxproj" (Build target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.07

@@ -1,0 +1,20 @@
+﻿Build started 24.11.2021 22:25:32.
+Logging verbosity is set to: Normal.     1>Project "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\OS07_03B\OS07_03B.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\OS07_03B.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt OS07_03B.cpp
+         OS07_03B.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\Debug\OS07_03B.exe" /INCREMENTAL /ILK:"Debug\OS07_03B.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\Debug\OS07_03B.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\Debug\OS07_03B.lib" /MACHINE:X86 Debug\OS07_03B.obj
+         OS07_03B.vcxproj -> C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\Debug\OS07_03B.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\OS07_03B.tlog\unsuccessfulbuild".
+         Touching "Debug\OS07_03B.tlog\OS07_03B.lastbuildstate".
+     1>Done Building Project "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\07. Synchronization\OS07\OS07_03B\OS07_03B.vcxproj" (Build target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.99
