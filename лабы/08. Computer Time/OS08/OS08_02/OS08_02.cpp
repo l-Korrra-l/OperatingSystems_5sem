@@ -24,7 +24,7 @@ int main()
 		{
 			std::cout << sec << " sec: " << i;
 			break;
-		}
+		}	
 	}
 
 	exit(0);

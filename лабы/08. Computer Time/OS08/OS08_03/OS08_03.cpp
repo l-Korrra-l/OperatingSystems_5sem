@@ -1,34 +1,33 @@
-﻿#include <ctime>
+﻿#include <Windows.h>
 #include <iostream>
-#include <Windows.h>
-
-#define SECOND 10000000
-//-----------------
-int main()
+#include <ctime>
+int count = 0;
+#define SECOND 1000000
+PTIMERAPCROUTINE CALLBACK callback(LPVOID lpArgToCompletionRoutine, DWORD dwTimerLowValue, DWORD dwTimerHighValue)
 {
-	HANDLE htimer = CreateWaitableTimer(NULL, FALSE, L"taskTimer");
-	long long it = -3 * SECOND;
-	std::cout << clock() << " : main\n";
+	count = ++count;
+	return NULL;
+}
+int main() {
+	HANDLE htimer = CreateWaitableTimer(NULL, FALSE, NULL);
+	long long it = SECOND * -0;
+	LPVOID lpArgToCompletionRoutine = NULL;
+	DWORD dwTimerLowValue = NULL, dwTimerHighValue = NULL;
 	clock_t start = clock();
-	 
-	if (!SetWaitableTimer(htimer, (LARGE_INTEGER*)&it, 3000, NULL, NULL, FALSE)) throw "Error SetWaitableTimer";  //(PTIMERAPCROUTINE)10
-
-	for (int i = 0;; i++)
-	{
-
+	for (int i = 0;; i++) {
+		if (!SetWaitableTimer(htimer, (LARGE_INTEGER*)&it, 3000, callback(lpArgToCompletionRoutine, dwTimerLowValue, dwTimerHighValue), NULL, FALSE)) {
+			throw "Error SetWaitableTimer";
+		}
+		if ((clock() - start) == 3000 || (clock() - start) == 6000 || (clock() - start) == 9000 || (clock() - start) == 12000) {
+			std::cout << "- " << count << ", s - " << clock() - start << '\n';
+		}
 		if ((clock() - start) / CLOCKS_PER_SEC == 15) {
-			std::cout << clock() - start << " sec: " << i << std::endl;
-			CancelWaitableTimer(htimer);
+			std::cout << "- " << count << ", s - " << clock() - start << '\n';
 			break;
 		}
-
-		if (WaitForSingleObject(htimer, INFINITE) == WAIT_OBJECT_0)
-		std::cout << clock() - start << " sec: " << i << std::endl;
-
+		WaitForSingleObject(htimer, INFINITE);
 	}
-	
+	CloseHandle(htimer);
 	system("pause");
 	return 0;
 }
-
-
